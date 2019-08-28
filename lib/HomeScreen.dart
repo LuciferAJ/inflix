@@ -31,14 +31,14 @@ class _HomeScreenState extends State<HomeScreen> {
             children: <Widget>[
               Padding(
                 padding: const EdgeInsets.symmetric(
-                    horizontal: 12.0, vertical: 30.0),
+                    horizontal: 12.0, vertical: 40.0),
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Image(
                       image: new AssetImage('assets/inflix.png'),
                       fit: BoxFit.fill,
-                      height: MediaQuery.of(context).size.height * 0.07,
+                      height: MediaQuery.of(context).size.height * 0.065,
 //                    width: MediaQuery.of(context).size.width * 0.5,
                     ),
                     IconButton(
