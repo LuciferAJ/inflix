@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'MovieDetails.dart';
 import 'MovieFormat.dart';
+import 'SearchPage.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -47,7 +48,12 @@ class _HomeScreenState extends State<HomeScreen> {
                           color: Colors.white,
                           size: 30,
                         ),
-                        onPressed: () {})
+                        onPressed: () {
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => Search_bar()),
+                          );
+                        })
                   ],
                 ),
               ),
@@ -60,7 +66,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Text(
                     "Trending",
                     style: TextStyle(
-                        color: Colors.white,
+                        color: Colors.redAccent,
                         fontSize: 40,
                         letterSpacing: 1.0,
                         fontWeight: FontWeight.w700,
@@ -87,7 +93,7 @@ class _HomeScreenState extends State<HomeScreen> {
                   child: Text(
                     "Greatest Hits",
                     style: TextStyle(
-                        color: Colors.white,
+                        color: Colors.blue,
                         fontSize: 40,
                         letterSpacing: 1.0,
                         fontWeight: FontWeight.w700,
